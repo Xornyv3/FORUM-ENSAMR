@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/1b6a3y8_tif0f.css","style"]
+:HL["/_next/static/media/instrument_sans_latin-s.p.3h2wr6o8p949u.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/assets/ensam-rabat-universe.png","image",{"fetchPriority":"high"}]
+:HL["/assets/forum-ensam-r-logo.png","image"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"programme","h":96,"c":"$Q2"}]]
+0:{"b":"WAlo9om5WcpWg-vno3G2I","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
