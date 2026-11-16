@@ -8,6 +8,8 @@ export function CreationMedia({ enabled, reducedMotion }: { enabled: boolean; re
   const { assets } = experienceConfig;
   const [attempt, setAttempt] = useState(0);
   const hasVideo = Boolean(assets.handsVideoDesktop || assets.handsVideoMobile);
+  // Match the first decoded frame during loading; keep the static tableau for reduced motion.
+  const poster = reducedMotion ? "/assets/humanxmachine.b1258adc36a0.poster.png" : "/assets/humanxmachine-opening.jpg";
 
 
   const onVideoError = (event: SyntheticEvent<HTMLVideoElement>) => {
@@ -20,7 +22,8 @@ export function CreationMedia({ enabled, reducedMotion }: { enabled: boolean; re
   };
 
   return (
-    <div className="creation-media" aria-hidden="true" style={{ backgroundImage: "url(/assets/humanxmachine.b1258adc36a0.poster.png)", backgroundSize: "cover", backgroundPosition: "center" }}>
+    <div className="creation-media" aria-hidden="true">
+      <div className="creation-film" style={{ backgroundImage: `url(${poster})`, backgroundSize: "cover", backgroundPosition: "center" }}>
       {hasVideo && enabled && !reducedMotion && attempt < 3 ? (
         <video
           key={attempt}
@@ -29,13 +32,14 @@ export function CreationMedia({ enabled, reducedMotion }: { enabled: boolean; re
           playsInline
           preload="auto"
           data-scroll-video
-          poster="/assets/humanxmachine.b1258adc36a0.poster.png"
+          poster={poster}
           onError={onVideoError}
         >
           {attempt < 2 && assets.handsVideoMobile ? <source src={attempt === 1 ? `${assets.handsVideoMobile}?retry=1` : assets.handsVideoMobile} media="(max-width: 700px)" type="video/mp4" /> : null}
           {assets.handsVideoDesktop ? <source src={attempt === 2 ? "/assets/humanxmachine.b1258adc36a0.mp4" : attempt === 1 ? `${assets.handsVideoDesktop}?retry=1` : assets.handsVideoDesktop} type="video/mp4" /> : null}
         </video>
       ) : null}
+      </div>
       <div className="creation-video-veil" aria-hidden="true" />
     </div>
   );

@@ -610,17 +610,18 @@ export class ExperienceWorld {
     this.engineered.position.set(lerp(2.95, 5.5, separation), this.mobile ? -0.8 : 0.1, 0.35);
     this.engineered.rotation.set(0.12, lerp(-0.55, -1.0, separation), lerp(-0.15, -0.3, separation));
     if (this.mobile) {
-      this.organic.position.x *= 0.65;
-      this.engineered.position.x *= 0.65;
-      this.organic.scale.setScalar(0.82);
-      this.engineered.scale.setScalar(0.82);
+      this.organic.position.x *= this.width <= 600 ? 0.38 : 0.65;
+      this.engineered.position.x *= this.width <= 600 ? 0.38 : 0.65;
+      this.organic.scale.setScalar(this.width <= 600 ? 0.42 : 0.82);
+      this.engineered.scale.setScalar(this.width <= 600 ? 0.42 : 0.82);
     } else {
       this.organic.scale.setScalar(1);
       this.engineered.scale.setScalar(1);
     }
 
     const emergence = smooth(0.747, 0.823, p);
-    this.genesis.scale.setScalar(lerp(0.025, 0.96, emergence));
+    this.genesis.scale.setScalar(lerp(0.025, 0.96, emergence) * (this.width <= 600 ? 0.65 : 1));
+    this.genesis.position.x = this.width <= 600 ? 0.6 : 2.2;
     this.ribbon.rotation.set(lerp(0.9, 0.17, emergence), lerp(-1.1, 0.5, smooth(0.77, 0.88, p)), lerp(-0.8, 0.2, smooth(0.77, 0.88, p)));
     // The studio rig travels with the narrative, avoiding a light switch at cues.
     const litZ = -23 * smooth(0.16, 0.25, p)

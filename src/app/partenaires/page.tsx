@@ -51,7 +51,7 @@ export default function PartenairesPage() {
           <h1>Ils nous ont fait confiance.</h1>
           <p>Un forum construit avec celles et ceux qui transforment les idées en systèmes, en métiers et en futurs concrets.</p>
         </div>
-        <div className="partners-number" aria-label="52 partenaires"><span>52</span></div>
+        <div className="partners-number" aria-label="52 entreprises"><span>52</span><small>entreprises</small></div>
       </section>
 
       <section className="partners-proof">
