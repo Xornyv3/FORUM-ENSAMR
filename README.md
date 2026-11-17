@@ -2,7 +2,7 @@
 
 A functioning cinematic website template: eight chapters, one persistent Three.js world, semantic editorial typography, and a deterministic native-scroll timeline. Built with Next.js App Router, TypeScript, Three.js, React, and GSAP ScrollTrigger. No external services, API keys, or audio are required.
 
-## Run
+## Run:
 
 Use Node.js 22. Install and start the development server:
 
