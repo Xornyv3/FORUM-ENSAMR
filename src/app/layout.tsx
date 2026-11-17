@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://forumensamrabat.com"),
   robots: { index: true, follow: true },
   icons: {
-    icon: "/assets/forum-ensam-r-logo.png",
+    icon: { url: "/assets/forum-ensam-r-logo.png", type: "image/png", sizes: "768x768" },
   },
 };
 
