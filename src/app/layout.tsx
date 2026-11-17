@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { experienceConfig } from "@/config/experience";
+import { pageMetadata } from "@/config/seo";
 import "./globals.css";
 
 const instrument = localFont({
@@ -11,9 +11,9 @@ const instrument = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `${experienceConfig.projectName} — ${experienceConfig.invitation.title.join(" ")}`,
-  description: experienceConfig.hero.description,
-  robots: { index: false, follow: false },
+  ...pageMetadata("Forum ENSAM Rabat 2026 | Forum Industriel ENSAM-R", "Forum ENSAM Rabat 2026 : rendez-vous les 2 et 3 décembre à l’ENSAM Rabat pour deux journées de panels et de rencontres entre étudiants, ingénieurs et entreprises.", "/"),
+  metadataBase: new URL("https://forumensamrabat.com"),
+  robots: { index: true, follow: true },
   icons: {
     icon: "/assets/forum-ensam-r-logo.png",
   },
