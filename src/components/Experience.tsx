@@ -147,7 +147,7 @@ export function Experience() {
           {sections.hero ? <section className="scene-content hero-content" data-scene="hero" aria-labelledby="hero-title">
             {config.hero.subtitle ? <p className="scene-kicker">{config.hero.subtitle}</p> : null}
             <h2 id="hero-title" className="hero-title display"><DisplayLines lines={config.hero.title} /></h2>
-            <div className="hero-baseline"><p>{config.hero.description}</p><a href={config.hero.cta.href} className="text-link" onClick={config.hero.cta.href === "#reel" ? (event) => { event.preventDefault(); goTo(sections.reel ? "reel" : cues[Math.min(cues.findIndex((cue) => cue.id === "hero") + 1, cues.length - 1)].id); } : undefined}>{config.hero.cta.label}<Arrow /></a></div>
+            <div className="hero-baseline"><p>{config.hero.description}</p><button type="button" className="text-link" onClick={openContactForm} aria-haspopup="dialog">{config.hero.cta.label}<Arrow /></button></div>
             {config.partners.length ? <div className="partner-placeholders">{config.partners.map((partner) => {
               const mark = partner.logo ? <picture><img src={partner.logo} alt={partner.name} width="100" height="28" loading="lazy" /></picture> : partner.name;
               return partner.href ? <a href={partner.href} key={partner.name}>{mark}</a> : <span key={partner.name}>{mark}</span>;
