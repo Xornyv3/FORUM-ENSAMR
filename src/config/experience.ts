@@ -56,7 +56,7 @@ export interface ExperienceConfig {
   footer: {
     credit: string;
     note: string;
-    contacts: { email: string; phone: string; instagram: string; location: string };
+    contacts: { email: string; linkedin: string; instagram: string; location: string };
   };
 }
 
@@ -131,10 +131,10 @@ export const experienceConfig: ExperienceConfig = {
   },
   footer: {
     credit: "FORUM ENSAM-R • 2–3 DÉCEMBRE 2026",
-    note: "forumensamr@gmail.com • +212 537 687 150 • Instagram @forum_ensamr_entreprise",
+    note: "forumensamr@gmail.com • LinkedIn forum-ensamr • Instagram @forum_ensamr_entreprise",
     contacts: {
       email: "forumensamr@gmail.com",
-      phone: "(+212) 537 687 150",
+      linkedin: "forum-ensamr",
       instagram: "@forum_ensamr_entreprise",
       location: "ENSAM Rabat, Maroc",
     },
