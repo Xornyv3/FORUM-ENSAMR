@@ -2,4 +2,4 @@
 :HL["/_next/static/media/instrument_sans_latin-s.p.3h2wr6o8p949u.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/assets/ensam-rabat-universe.png","image",{"fetchPriority":"high"}]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"yH3epMGZ0C_kmutv5GHoR","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"qsE9TSz1rle5NfgZKFHXG","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
