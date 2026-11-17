@@ -3,27 +3,27 @@ import { EditorialShell, SectionHeading } from "@/components/EditorialShell";
 const panels = [
   {
     number: "I",
-    title: "L’IA et l’infrastructure des données",
+    title: "L’IA et l’infrastructure des données : bâtir une souveraineté numérique durable",
     date: "02 décembre 2026 · 14 h 00 — 15 h 30",
     question: "Comment le Maroc peut-il concilier puissance de calcul, hébergement local et modèles d’IA adaptés pour garantir sa souveraineté numérique ?",
-    summary: "À l’ère de l’intelligence artificielle, la donnée est devenue un levier stratégique majeur. Ce panel examine comment la puissance de calcul, l’hébergement local des données et le développement d’IA adaptées aux réalités linguistiques et culturelles nationales se renforcent mutuellement.",
-    topics: ["Hébergement local et puissance de calcul souveraine.", "Adaptabilité des modèles d’IA aux réalités locales.", "Maintenance prédictive et résilience des infrastructures critiques."],
+    summary: "Développer une IA utile et maîtrisée suppose de construire des fondations solides : des données de qualité, des infrastructures fiables et une gouvernance de confiance. Ce panel explore les choix technologiques, industriels et humains qui permettraient au Maroc de renforcer son autonomie numérique tout en maîtrisant l’impact environnemental de ses infrastructures.",
+    topics: ["Hébergement des données, cloud et accès à la puissance de calcul.", "Gouvernance, cybersécurité et protection des données sensibles.", "Modèles d’IA adaptés aux langues et aux besoins des acteurs marocains.", "Sobriété énergétique et résilience des infrastructures numériques."],
   },
   {
     number: "II",
-    title: "Souveraineté énergétique et stress hydrique",
+    title: "Souveraineté énergétique et stress hydrique : entre défis des ressources et ambitions de développement, quelle vision pour le Maroc de demain ?",
     date: "02 décembre 2026 · 16 h 00 — 17 h 30",
-    question: "Comment concilier le développement d’infrastructures énergétiques et numériques à haute intensité avec la préservation des ressources en eau ?",
-    summary: "Face aux défis climatiques et à la gestion des ressources, ce panel explore les moyens d’harmoniser ambitions de développement et durabilité : énergie propre, centres de données et agriculture connectée.",
-    topics: ["Énergies renouvelables et infrastructures numériques.", "Agriculture connectée et optimisation de l’eau.", "Adoption des technologies par le secteur agricole."],
+    question: "Quels arbitrages entre eau, énergie et développement pour construire une trajectoire durable et résiliente au Maroc ?",
+    summary: "Les ambitions industrielles, agricoles et territoriales du Maroc invitent à penser ensemble la sécurité énergétique et la disponibilité de l’eau. Ce panel met en discussion les solutions techniques et les choix de gouvernance pour répondre aux besoins de développement, préserver les ressources et renforcer la capacité d’adaptation des territoires.",
+    topics: ["Énergies renouvelables, stockage et adaptation des réseaux électriques.", "Dessalement, réutilisation des eaux usées et maîtrise des besoins énergétiques.", "Efficacité hydrique et énergétique dans l’industrie et l’agriculture.", "Complémentarité des usages, investissements et résilience des territoires."],
   },
   {
     number: "III",
-    title: "Le capital humain au cÅ“ur de la transformation",
+    title: "Le capital humain au cœur de la transformation : quelles compétences pour l’ingénieur marocain capable de transformer la vision en réalité ?",
     date: "03 décembre 2026 · 10 h 00 — 12 h 00",
     question: "Quelles compétences et quel leadership faut-il développer pour transformer les visions stratégiques nationales en réalités industrielles ?",
-    summary: "Ce panel dessine le profil de l’ingénieur de demain : un leader agile capable de piloter des projets complexes et de décider dans l’incertitude.",
-    topics: ["Agilité, leadership et projets complexes.", "Cursus et partenariats académiques-industriels.", "Talents locaux et diaspora marocaine."],
+    summary: "La transformation se concrétise grâce à des ingénieurs capables de relier expertise technique, compréhension du terrain et responsabilité collective. Ce panel interroge l’évolution des formations et des parcours professionnels pour préparer des talents capables de concevoir des solutions, de mobiliser des équipes et de mener les projets jusqu’à leur mise en œuvre.",
+    topics: ["Maîtrise des fondamentaux, culture des données et usage critique de l’IA.", "Gestion de projets, communication et coopération entre disciplines.", "Éthique, responsabilité environnementale et compréhension des enjeux industriels.", "Liens école-entreprise, apprentissage continu et valorisation des talents marocains."],
   },
 ];
 

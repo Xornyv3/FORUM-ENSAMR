@@ -81,7 +81,7 @@ export const experienceConfig: ExperienceConfig = {
     title: ["FORUM", "INDUSTRIEL"],
     subtitle: "",
     description: "Deux journées de rencontres entre étudiants, ingénieurs et entreprises.",
-    cta: { label: "Devenir partenaire", href: "mailto:contact@forumensamrabat.com" },
+    cta: { label: "Devenir partenaire", href: "mailto:forumensamr@gmail.com" },
   },
   wordReel: {
     prefix: "L'INGÉNIEUR EST",
@@ -104,12 +104,12 @@ export const experienceConfig: ExperienceConfig = {
   },
   genesis: {
     title: ["PRENEZ PART", "AU FORUM."],
-    cta: { label: "Devenir partenaire", href: "mailto:contact@forumensamrabat.com" },
+    cta: { label: "Devenir partenaire", href: "mailto:forumensamr@gmail.com" },
   },
   outro: {
     title: ["RENDEZ-VOUS", "LES 2 & 3", "DÉCEMBRE."],
     description: "Deux journées d’échanges entre étudiants, ingénieurs et entreprises.",
-    cta: { label: "Devenir partenaire", href: "mailto:contact@forumensamrabat.com" },
+    cta: { label: "Devenir partenaire", href: "mailto:forumensamr@gmail.com" },
   },
   // Add only approved partner marks. Empty by design; no endorsements are implied.
   partners: [],
@@ -131,9 +131,9 @@ export const experienceConfig: ExperienceConfig = {
   },
   footer: {
     credit: "FORUM ENSAM-R • 2–3 DÉCEMBRE 2026",
-    note: "contact@forumensamrabat.com • +212 537 687 150 • Instagram @forum_ensamr_entreprise",
+    note: "forumensamr@gmail.com • +212 537 687 150 • Instagram @forum_ensamr_entreprise",
     contacts: {
-      email: "contact@forumensamrabat.com",
+      email: "forumensamr@gmail.com",
       phone: "(+212) 537 687 150",
       instagram: "@forum_ensamr_entreprise",
       location: "ENSAM Rabat, Maroc",

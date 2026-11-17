@@ -17,7 +17,7 @@ export default function PartenairesPage() {
     }
     data.set("_subject", "Nouvelle prise de contact — Forum ENSAM-R");
     setContactStatus("sending");
-    void fetch("https://formsubmit.co/ajax/alaguiabdoullah@gmail.com", {
+    void fetch("https://formsubmit.co/ajax/forumensamr@gmail.com", {
       method: "POST",
       headers: { Accept: "application/json", "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
       body: data,
@@ -69,7 +69,7 @@ export default function PartenairesPage() {
         <form className="contact-form" onSubmit={submitContactForm}>
           <button type="button" className="contact-close" aria-label="Fermer le formulaire" onClick={() => contactDialog.current?.close()}>×</button>
           <div className="contact-form-heading"><div><p className="contact-eyebrow">FORUM ENSAM-R · CONTACT</p><h2 id="partners-contact-title">Prenez part au forum.</h2><p>Parlez-nous de votre entreprise et de la manière dont vous souhaitez prendre part au forum.</p></div></div>
-          <div className="contact-fields"><label>Nom complet<input name="name" required autoComplete="name" placeholder="Votre nom et prénom" /></label><label>Entreprise / organisation<input name="company" required autoComplete="organization" placeholder="Nom de votre organisation" /></label><label>Email professionnel<input type="email" name="email" required autoComplete="email" placeholder="vous@entreprise.ma" /></label><label>Votre intérêt<select name="interest" defaultValue="Partenariat"><option>Partenariat</option><option>Intervention dans un panel</option><option>Recrutement</option><option>Autre demande</option></select></label><label className="contact-message">Votre message<textarea name="message" rows={4} required placeholder="Vos idées, vos attentes, votre projet de partenariat ?" /></label></div>
+          <div className="contact-fields"><label>Nom complet<input name="name" required autoComplete="name" placeholder="Votre nom et prénom" /></label><label>Entreprise / organisation<input name="company" required autoComplete="organization" placeholder="Nom de votre organisation" /></label><label>Email professionnel<input type="email" name="email" required autoComplete="email" placeholder="vous@entreprise.ma" /></label><label>Votre intérêt<select name="interest" defaultValue="Partenariat"><option>Partenariat</option><option>Intervention dans un panel</option><option>Sponsor</option><option>Autre demande</option></select></label><label className="contact-message">Votre message<textarea name="message" rows={4} required placeholder="Vos idées, vos attentes, votre projet de partenariat ?" /></label></div>
           <div className="contact-form-footer"><span role="status">{contactStatus === "sending" ? "Envoi en cours…" : contactStatus === "idle" ? "Votre message sera envoyé à l’équipe du forum." : contactStatus}</span><button type="submit" className="contact-submit" disabled={contactStatus === "sending"}>Envoyer le message <span aria-hidden="true">↗</span></button></div>
         </form>
       </dialog>
